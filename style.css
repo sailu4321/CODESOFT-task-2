@@ -1,0 +1,155 @@
+body {
+    background-image:url(back1.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+float:right;
+}
+li a:hover:not(.active) 
+{
+    background-color: cyan;
+    padding:10px;
+    margin-top:15px;
+}
+
+a.active
+{
+    background-color: cyan;
+
+}
+ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 70px;
+    list-style: none; /* Add space between list items */
+    
+}
+
+/* Style the links (anchors) */
+ul li a {
+    text-decoration: none;
+    color:black; /* Text color for links */
+    font-weight: bold; /* Bold text for links */
+       
+}
+
+.links{
+    color:black;
+    margin:9px;
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:5px 20px;
+    font-weight:bolder;
+}
+.name{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    color:purple;
+}
+.links:hover{
+     color:white;
+     font-weight: bolder;
+     background-color: rgb(100, 95, 95);
+     border-radius:30px;
+     box-shadow:opx opx 4px 4px rgb(232, 220, 220);
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button {
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #c31432, #892211);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: white;
+  outline: 1px solid red;
+  color: red;
+  border: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.bordered-image {
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.short-info {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+.hero-sub-heading {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0px;
+}
+.user {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.learn-more {
+  align-self: start;
+  margin-top: 3rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+  .items {
+    display: none;
+    
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .learn-more {
+    align-self: start;
+    margin: 1rem 0px;
+  }
+}
